@@ -63,7 +63,7 @@ body::before {
 
 header {
   background: #000000;
-  color: rgb(0, 255, 0);
+  color: rgb(255, 255, 255);
   padding: 1rem 0;
 }
 
@@ -91,7 +91,9 @@ header {
 header h1 {
   margin-bottom: 0.5rem;
 }
-
+p{
+  color: #ffffff;
+}
 nav ul {
   list-style: none;
   display: flex;
@@ -121,7 +123,7 @@ nav ul li a {
   left: 0;
   width: 100%;
   height: 100%;
-  background: rgba(0, 255, 0, 0.05);
+  background: rgba(255, 255, 255, 0.05);
   opacity: 0;
   transition: opacity 0.3s ease;
   z-index: -1;
@@ -133,6 +135,74 @@ nav ul li a {
 
 html {
   scroll-behavior: smooth;
+}
+
+#education {
+  max-width: 1200px;
+  margin: 0 auto 2rem auto;
+  padding: 2rem;
+  text-align: center;
+}
+
+#education h2 {
+  font-size: 2rem;
+  color: rgb(0, 255, 0);
+  margin-bottom: 1.5rem;
+}
+
+.education-grid {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 15px;
+  justify-content: center;
+  align-items: flex-start;
+  margin-top: 2rem;
+}
+
+.education-card {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 260px;
+  height: 200px;
+  background-color: rgb(255, 255, 255);
+  border-radius: 10px;
+  box-shadow: 0 4px 12px rgba(0, 255, 0, 0.25);
+  transition: background-color 0.3s ease, transform 0.2s ease;
+  padding: 15px;
+  text-align: center;
+  font-weight: bold;
+  color: rgb(0, 255, 0);
+}
+
+.education-card:hover {
+  background-color: rgba(0, 255, 0, 0.1);
+  transform: scale(1.05);
+}
+
+.education-card:active {
+  transform: scale(0.98);
+}
+
+.education-card img {
+  width: 50px;
+  height: 50px;
+  object-fit: cover;
+  border-radius: 5px;
+  margin-bottom: 10px;
+}
+
+.education-card p {
+  font-weight: normal;
+  color: rgb(0, 255, 0);
+  font-size: 0.9rem;
+  margin: 3px 0;
+}
+
+.education-card h3 {
+  font-size: 1rem;
+  margin: 5px 0;
 }
 
 #projects {
@@ -211,75 +281,6 @@ html {
   text-decoration: underline;
   font-weight: bold;
 }
-
-#education {
-  max-width: 1200px;
-  margin: 0 auto 2rem auto;
-  padding: 2rem;
-  text-align: center;
-}
-
-#education h2 {
-  font-size: 2rem;
-  color: rgb(0, 255, 0);
-  margin-bottom: 1.5rem;
-}
-
-.education-grid {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 15px;
-  justify-content: center;
-  align-items: flex-start;
-  margin-top: 2rem;
-}
-
-.education-card {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  width: 260px;
-  height: 200px;
-  background-color: rgb(255, 255, 255);
-  border-radius: 10px;
-  box-shadow: 0 4px 12px rgba(0, 255, 0, 0.25);
-  transition: background-color 0.3s ease, transform 0.2s ease;
-  padding: 15px;
-  text-align: center;
-  font-weight: bold;
-  color: rgb(0, 255, 0);
-}
-
-.education-card:hover {
-  background-color: rgba(0, 255, 0, 0.1);
-  transform: scale(1.05);
-}
-
-.education-card:active {
-  transform: scale(0.98);
-}
-
-.education-card img {
-  width: 50px;
-  height: 50px;
-  object-fit: cover;
-  border-radius: 5px;
-  margin-bottom: 10px;
-}
-
-.education-card p {
-  font-weight: normal;
-  color: rgb(0, 255, 0);
-  font-size: 0.9rem;
-  margin: 3px 0;
-}
-
-.education-card h3 {
-  font-size: 1rem;
-  margin: 5px 0;
-}
-
 
 #skills {
   text-align: center;
