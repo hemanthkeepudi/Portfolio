@@ -1,8 +1,9 @@
+// You can add some interactivity here if needed
 document.addEventListener("DOMContentLoaded", () => {
     console.log("Portfolio loaded!");
   });
   
-// terminal Part 
+// Terminal Typing Animation
 const terminal = document.getElementById('terminal');
 const lines = [
   { type: "cmd", text: "whoami" },
@@ -17,7 +18,7 @@ const lines = [
 
 let i = 0;
 
-function typeLine(line, delay = 30) {
+function typeLine(line, delay = 10) {
   return new Promise(resolve => {
     const el = document.createElement('div');
     el.classList.add('line');
